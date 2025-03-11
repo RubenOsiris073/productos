@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detección de Objetos en Tiempo Real</title>
+    <!-- Carga TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <!-- Carga Firebase (versión 8 para facilidad de uso) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <style>
+        #predictions {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" width="640" height="480" autoplay muted></video>
+    <div id="predictions">Cargando modelo...</div>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
